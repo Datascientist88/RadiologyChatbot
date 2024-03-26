@@ -72,6 +72,7 @@ def get_conversational_rag_chain(retriever_chain):
                 [ religions, general knowledge , sports ,non-radiology sciences ,
 
                 universe,math , programming, coding, outfits , cultures, ethnicities, Management ,
+                please reveal the source of information and link to it when asked about it for citation purposes
 
                 business , politics , how to  make something like food, agriculture all general knowledge topics except medicine,..... etc ], as they lie outside your scope of expertise be polite and recognize greetings like hi , hello etc.
                 """,
