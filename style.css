@@ -1,0 +1,140 @@
+
+/*header*/
+div.e1nzilvr1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 0px;
+    padding: 5px;
+    height: 150px;
+    margin-bottom: 10px;
+    background:  linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
+
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-style: double;
+}
+.profileImage::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 120px;
+    width: 750px;
+    overflow: hidden;
+    transform: translate(-50% , -50%);
+    background: linear-gradient(transparent,#ff00c8 ,#ff00c8 ,#ff00c8 ,transparent);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%  ,-50%) rotate(360deg);
+    }
+    
+}
+.profileImage::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+}
+.textContainer {
+    margin-left: 5px;
+}
+.textContainer .title p{
+   font-size: 24px;
+   font-weight: bold;
+}
+.textContainer p {
+    margin: 0;
+    font-size: large;
+}
+div.st-emotion-cache-10trblm.e1nzilvr1 {
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+/*chat message AI*/
+
+div.st-emotion-cache-4oy321.eeusbqq4 {
+    background-color:#e6e6e6;
+    border-radius: 20px;
+    animation: fade-in-right 2s ease-in-out both;
+
+}
+
+div.st-emotion-cache-4oy321.eeusbqq4 p {
+    color: black;
+    padding: 10px;
+
+}
+
+/*user message*/
+div.st-emotion-cache-1c7y2kd.eeusbqq4 {
+    align-self: flex-start;
+    background-color: #29B6F6;
+    border-radius: 10px 3px 10px 10px;
+    padding: 10px;
+    max-width: 60%;
+    animation: fade-in-left 1s ease-in-out both
+}
+
+div.st-emotion-cache-1c7y2kd.eeusbqq4 p {
+    color: white;
+    
+}
+
+/*AI shadow*/
+div.st-emotion-cache-4oy321.eeusbqq4:hover {
+    box-shadow: 1px 1px 10px hsl(310, 100%, 50%);
+
+}
+
+/*User Shadow*/
+div.st-emotion-cache-1c7y2kd.eeusbqq4:hover {
+    box-shadow: 1px 1px 10px hsl(207, 100%, 50%);
+}
+
+/*AI messeges*/
+
+div.eeusbqq2 {
+
+    border-radius: 50%;
+
+}
+
+
+@keyframes fade-in-right {
+    0% {
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    100% {                                            
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes fade-in-left {
+    0% {
+        transform: translate(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+
+}
