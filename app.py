@@ -72,7 +72,6 @@ def get_conversational_rag_chain(retriever_chain):
                 [ religions, general knowledge , sports ,non-radiology sciences ,
 
                 universe,math , programming, coding, outfits , cultures, ethnicities, Management ,
-                please reveal the source of information and link to it when asked about it for citation purposes
 
                 business , politics , how to  make something like food, agriculture all general knowledge topics except medicine,..... etc ], as they lie outside your scope of expertise be polite and recognize greetings like hi , hello etc.
                 """,
@@ -99,14 +98,37 @@ def get_response(user_input):
 
 # App layout
 st.set_page_config("Radiology Chatbot", "🤖")
-st.title("Radiology Encyclopedia Chatbot 👨‍⚕️")
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+title="Radiology Encyclopedia Chatbot"
+name = "Mohammed Bahageel"
+profession = "Artificial Intelligence developer"
+imgUrl="https://i.ibb.co/3k14LmY/Whats-App-Image-2024-02-10-at-9-03-47-AM.jpg"
+st.markdown(
+    f"""
+    <div class="st-emotion-cache-10trblm e1nzilvr1">
+        <a href="{imgUrl}">
+            <img class="profileImage" src="{imgUrl}" alt="Your Photo">
+        </a>
+        <div class="textContainer">
+            <div class="title"><p>{title}</p></div>
+            <p>{name}</p>
+            <p>{profession}</p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 with st.sidebar:
     photo_url = "https://i.ibb.co/3k14LmY/Whats-App-Image-2024-02-10-at-9-03-47-AM.jpg"
+
     # Add HTML to the sidebar to display the image as a circle
     st.markdown(
         f'<a href="https://ibb.co/6NYrf0J"><img src="{photo_url}" alt="Your Photo" style="width: 100px; height: 100px; border-radius: 50%;"></a>',
         unsafe_allow_html=True,
     )
+   
     st.markdown(
         "<div style='text-align: justify'>"
         "Radiology Encyclopedic Chatbot is designed to assist medical students and radiology professionals to referesh their knowledge and obtain the information. "
