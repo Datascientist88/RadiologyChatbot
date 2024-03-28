@@ -101,9 +101,7 @@ st.set_page_config("Radiology Chatbot", "🤖")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 title="Radiology Encyclopedia Chatbot"
-name = "Mohammed Bahageel"
-profession = "Artificial Intelligence developer"
-imgUrl="https://i.ibb.co/3k14LmY/Whats-App-Image-2024-02-10-at-9-03-47-AM.jpg"
+imgUrl="https://www.analyticsinsight.net/wp-content/uploads/2021/12/Dont-Be-Rude-to-Your-AI-as-It-Might-Take-Revenge-in-the-Future.jpg"
 st.markdown(
     f"""
     <div class="st-emotion-cache-18ni7ap ezrtsby2">
@@ -112,8 +110,6 @@ st.markdown(
         </a>
         <div class="textContainer">
             <div class="title"><p>{title}</p></div>
-            <p>{name}</p>
-            <p>{profession}</p>
         </div>
     </div>
     """,
