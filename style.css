@@ -46,9 +46,8 @@ div.st-emotion-cache-18ni7ap .ezrtsby2 {
 div.st-emotion-cache-4oy321.eeusbqq4 {
     background-color: white;
     border-radius: 20px;
-    justify-content: center;
     margin-top: 5px;
-    padding: 1px 8px;
+    padding: 10px ;
     animation: fade-in-right 2s ease-in-out both;
 
 }
@@ -124,7 +123,7 @@ div.eeusbqq2 {
 }
 /*app Botom*/
 div.st-emotion-cache-uhkwx6.ea3mdgi6{
-     background:linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
+     background:#e6e6e6;
      border-radius: 5px 5px;
 }
 div.st-emotion-cache-1up18o9.e1d2x3se2{
