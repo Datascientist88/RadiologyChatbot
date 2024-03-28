@@ -9,8 +9,8 @@ div.ezrtsby2{
     display: flex;
     padding-left: 0px;
     padding: 5px;
-    height: 150px;
-    margin-bottom: 25px;
+    height: 120px;
+    margin-bottom: 35px;
     background: linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
 }
 
@@ -46,7 +46,7 @@ div.st-emotion-cache-18ni7ap .ezrtsby2 {
 div.st-emotion-cache-4oy321.eeusbqq4 {
     background-color: white;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     animation: fade-in-right 2s ease-in-out both;
 
 }
