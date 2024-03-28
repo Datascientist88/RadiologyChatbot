@@ -105,9 +105,6 @@ imgUrl="https://www.analyticsinsight.net/wp-content/uploads/2021/12/Dont-Be-Rude
 st.markdown(
     f"""
     <div class="st-emotion-cache-18ni7ap ezrtsby2">
-        <a href="{imgUrl}">
-            <img class="profileImage" src="{imgUrl}" alt="Your Photo">
-        </a>
         <div class="textContainer">
             <div class="title"><p>{title}</p></div>
         </div>
