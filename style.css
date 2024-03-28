@@ -1,15 +1,17 @@
-
+/*Body*/
+div.st-emotion-cache-1r4qj8v.erw9t6i1{
+     background-color: #e6e6e6;
+}
 /*header*/
-div.e1nzilvr1{
+div.ezrtsby2{
     justify-content: center;
     align-items: center;
     display: flex;
     padding-left: 0px;
     padding: 5px;
     height: 150px;
-    margin-bottom: 10px;
-    background:  linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
-
+    margin-bottom: 25px;
+    background: linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
 }
 
 .profileImage {
@@ -17,56 +19,34 @@ div.e1nzilvr1{
     height: 100px;
     margin-right: 10px;
     border-radius: 50%;
+    border:linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
     border-style: double;
 }
-.profileImage::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 120px;
-    width: 750px;
-    overflow: hidden;
-    transform: translate(-50% , -50%);
-    background: linear-gradient(transparent,#ff00c8 ,#ff00c8 ,#ff00c8 ,transparent);
-    animation: animate 4s linear infinite;
-}
-@keyframes animate {
-    0%{
-        transform: translate(-50% , -50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%  ,-50%) rotate(360deg);
-    }
-    
-}
-.profileImage::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-}
+
 .textContainer {
     margin-left: 5px;
-}
-.textContainer .title p{
-   font-size: 24px;
-   font-weight: bold;
+    color: antiquewhite;
 }
 .textContainer p {
     margin: 0;
     font-size: large;
 }
-div.st-emotion-cache-10trblm.e1nzilvr1 {
-    color: white;
+div.st-emotion-cache-18ni7ap .ezrtsby2 {
     padding: 5px;
     margin-top: 15px;
     font-size: 18px;
 }
+.textContainer .title p{
+     font-size: 24px;
+     color:antiquewhite;
+     font-weight: bold;
+  }
 /*chat message AI*/
 
 div.st-emotion-cache-4oy321.eeusbqq4 {
-    background-color:#e6e6e6;
+    background-color: white;
     border-radius: 20px;
+    margin-top: 15px;
     animation: fade-in-right 2s ease-in-out both;
 
 }
@@ -79,16 +59,18 @@ div.st-emotion-cache-4oy321.eeusbqq4 p {
 
 /*user message*/
 div.st-emotion-cache-1c7y2kd.eeusbqq4 {
-    align-self: flex-start;
-    background-color: #29B6F6;
+    align-self: flex-end;
+    background: linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
     border-radius: 10px 3px 10px 10px;
     padding: 10px;
     max-width: 60%;
+    margin-bottom: 0%;
+    flex-direction: row-reverse;
     animation: fade-in-left 1s ease-in-out both
 }
 
 div.st-emotion-cache-1c7y2kd.eeusbqq4 p {
-    color: white;
+    color: antiquewhite;
     
 }
 
@@ -100,7 +82,7 @@ div.st-emotion-cache-4oy321.eeusbqq4:hover {
 
 /*User Shadow*/
 div.st-emotion-cache-1c7y2kd.eeusbqq4:hover {
-    box-shadow: 1px 1px 10px hsl(207, 100%, 50%);
+    box-shadow: 1px 1px 10px #29B6F6;
 }
 
 /*AI messeges*/
@@ -136,5 +118,14 @@ div.eeusbqq2 {
         transform: translate(0%);
         opacity: 1;
     }
+
+}
+/*app Botom*/
+div.st-emotion-cache-uhkwx6.ea3mdgi6{
+     background:linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
+     border-radius: 5px 5px;
+}
+div.st-emotion-cache-1up18o9.e1d2x3se2{
+     color:linear-gradient(270deg, hsl(207, 65%, 70%), hsl(207, 100%, 50%));
 
 }
