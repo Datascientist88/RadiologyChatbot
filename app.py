@@ -9,6 +9,8 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 import tiktoken
+import base64
+from openai import OpenAI
 from langchain.chains.combine_documents import create_stuff_documents_chain
 # load the variables
 load_dotenv()
@@ -94,6 +96,20 @@ def get_response(user_input):
         yield content
     #return response["answer"]
     # If a response was retrieved, proceed with using it
+# convert text back to audio
+def text_to_audio(client, text, audio_path):
+    response = client.audio.speech.create(model="tts-1", voice="fable", input=text)
+    response.stream_to_file(audio_path)
+client = OpenAI()
+# autoplay audio function
+def autoplay_audio(audio_file):
+    with open(audio_file, "rb") as audio_file:
+        audio_bytes = audio_file.read()
+    base64_audio = base64.b64encode(audio_bytes).decode("utf-8")
+    audio_html = (
+        f'<audio src="data:audio/mp3;base64 ,{base64_audio}" controls autoplay>'
+    )
+    st.markdown(audio_html, unsafe_allow_html=True)
 
 
 # App layout
@@ -137,4 +153,7 @@ if user_query is not None and user_query != "":
         st.markdown(user_query)
     with st.chat_message("AI", avatar="🤖"):
         response=st.write_stream(get_response(user_query))
+        response_audio_file = "audio_response.mp3"
+        text_to_audio(client, response, response_audio_file)
+        autoplay_audio(response_audio_file)
         st.session_state.chat_history.append(AIMessage(content=response))
