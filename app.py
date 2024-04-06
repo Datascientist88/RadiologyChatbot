@@ -114,20 +114,7 @@ def autoplay_audio(audio_file):
 
 # App layout
 st.set_page_config("Radiology Chatbot", "🤖")
-with open('style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-title="Radiology Encyclopedia Chatbot"
-imgUrl="https://www.analyticsinsight.net/wp-content/uploads/2021/12/Dont-Be-Rude-to-Your-AI-as-It-Might-Take-Revenge-in-the-Future.jpg"
-st.markdown(
-    f"""
-    <div class="st-emotion-cache-18ni7ap ezrtsby2">
-        <div class="textContainer">
-            <div class="title"><p>{title}</p></div>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.title(" Radiology Encyclopedia ChatBot")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [
