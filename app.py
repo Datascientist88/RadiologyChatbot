@@ -116,7 +116,7 @@ def autoplay_audio(audio_file):
 st.set_page_config("Radiology Chatbot", "🤖")
 with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-title="Encyclopedia Chatbot"
+title="Radiology Encyclopedia Chatbot"
 name = " Developed by:Mohammed Bahageel"
 profession = "Artificial Intelligence developer"
 imgUrl="https://image.similarpng.com/very-thumbnail/2020/07/Pharmacy-logo-vector-PNG.png"
