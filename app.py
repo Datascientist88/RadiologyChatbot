@@ -142,7 +142,4 @@ if user_query is not None and user_query != "":
         st.markdown(user_query)
     with st.chat_message("AI", avatar="🤖"):
         response=st.write_stream(get_response(user_query))
-
-        
-
         st.session_state.chat_history.append(AIMessage(content=response))
