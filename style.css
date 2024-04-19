@@ -1,6 +1,7 @@
 /*Body*/
-div.st-emotion-cache-1r4qj8v.erw9t6i1{
-    background-color:#F1EDE6;
+[data-testid="stAppViewContainer"]{
+    background-image:url("https://ibb.co/279RFSq");
+    background-size:cover;
 }
 /*header*/
 div.ezrtsby2{
