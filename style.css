@@ -1,7 +1,7 @@
 /*Body*/
 [data-testid="stAppViewContainer"]{
     background-image:url("https://i.ibb.co/Z6jvfSd/bgimage.jpg");
-    background-size:cover;
+    background-size:contain;
 }
 /*header*/
 div.ezrtsby2{
