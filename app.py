@@ -119,7 +119,7 @@ with open('style.css') as f:
 title="Radiology Encyclopedia Chatbot"
 name = " Developed by:Mohammed Bahageel"
 profession = "Artificial Intelligence developer"
-imgUrl="https://scontent.fjed4-5.fna.fbcdn.net/v/t39.30808-1/311428080_458335873058521_7029458301955315335_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YFZOTVGhviUAb5Kuq6A&_nc_ht=scontent.fjed4-5.fna&oh=00_AfAsd4Y5zo0o6EEnJkwHjNR2M0Io2UOHIfcvesgt5Imcpw&oe=66276CC7"
+imgUrl="https://i.ibb.co/JyjM6P9/800px-Radiologist-interpreting-MRI.jpg"
 st.markdown(
         f"""
         <div class="st-emotion-cache-18ni7ap ezrtsby2">
